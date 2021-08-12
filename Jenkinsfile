@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('display') {
             steps {
-                echo "Bill"params.hostname
+                echo "Bill"
             }
         }
 }
