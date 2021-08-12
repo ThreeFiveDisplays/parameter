@@ -1,4 +1,5 @@
-pipeline {
+
+    checkout scm
     agent { label 'master' }
     parameters {
        string(name: 'hostname', defaultValue: 'gabor-dev', description: 'Hostname or IP address')
