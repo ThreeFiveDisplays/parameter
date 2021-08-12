@@ -1,4 +1,4 @@
-node('docker && android-build') {
+pipeline {
     agent { label 'master' }
     parameters {
        string(name: 'hostname', defaultValue: 'gabor-dev', description: 'Hostname or IP address')
