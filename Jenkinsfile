@@ -8,8 +8,8 @@ pipeline {
        string(defaultValue: 'ayufan-pine64', description: 'GitHub username or organization', name: 'GITHUB_USER')
        string(defaultValue: 'android-7.1', description: 'GitHub repository', name: 'GITHUB_REPO')
        booleanParam(defaultValue: true, description: 'Select if you want to build tablet version.', name: 'BUILD_TABLET')
-       booleanParam(defaultValue: true, description: 'Select if you want to build TV version.', name: 'BUILD_TV')
-       booleanParam(defaultValue: true, description: 'Select if you want to build Pinebook version.', name: 'BUILD_PINEBOOK')
+       booleanParam(defaultValue: false, description: 'Select if you want to build TV version.', name: 'BUILD_TV')
+       booleanParam(defaultValue: false, description: 'Select if you want to build Pinebook version.', name: 'BUILD_PINEBOOK')
  
     }
     stages {
