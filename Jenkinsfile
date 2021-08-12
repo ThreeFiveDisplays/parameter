@@ -1,6 +1,7 @@
 
-node('docker && android-build') {    
+node('docker && android-build') { 
 checkout scm
+    pipeline {
     agent { label 'master' }
     parameters {
        string(name: 'hostname', defaultValue: 'gabor-dev', description: 'Hostname or IP address')
@@ -39,5 +40,6 @@ checkout scm
                 }
             }
         }
+}
 }
 }
