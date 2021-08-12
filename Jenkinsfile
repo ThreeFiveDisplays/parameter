@@ -43,5 +43,5 @@ pipeline {
 }
 
 node('docker && android-build') { 
-checkout scm
+
 }
